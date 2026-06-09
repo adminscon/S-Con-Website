@@ -1,77 +1,90 @@
-import { Hammer, Building2, Wrench, HardHat, Calculator, Trees, Zap, Grid3x3, Sparkles, Sofa, PaintBucket, Layers } from "lucide-react";
+import { HardHat, Wrench, UtensilsCrossed, Fence, Construction, Trees, Ruler, PaintBucket, Plug, Settings2, Leaf, Sparkles, Hammer } from "lucide-react";
+
+import img1 from "../assets/1. New Builds .jpg";
+import img2 from "../assets/2. Home renovation.jpg";
+import img3 from "../assets/3.kitchen and bathroom Upgrades.png";
+import img4 from "../assets/4. Decks, Fences & Outdoor Living.avif";
+import img5 from "../assets/5. Driveways, Retaining Walls &  Landscaping.jpeg";
+import img6 from "../assets/6. landscaping.jpg";
+import img7 from "../assets/7 .Interior Fit‑Outs & Carpentry.avif";
+import img8 from "../assets/8. Painting, Plastering & Cladding.png";
+import img9 from "../assets/9.Plumbing, Electrical & Insulation.webp";
+import img10 from "../assets/10.Property maintenance.jpg";
+import img11 from "../assets/11. Garden Maintainance.jpg";
+import img12 from "../assets/12.site-clearance.jpg";
 
 const services = [
   {
-    icon: Hammer,
-    title: "General Contracting",
-    desc: "Full-scope construction managed from start to finish with precision and professionalism.",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&auto=format&fit=crop",
-  },
-  {
-    icon: Building2,
-    title: "Design & New Build",
-    desc: "Bespoke design and new build services tailored to your vision, from concept to completion.",
-    img: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&q=80&auto=format&fit=crop",
+    icon: HardHat,
+    title: "New Builds & Extensions",
+    desc: "From the ground up — we manage new home builds and seamless extensions with expert craftsmanship and full project oversight.",
+    img: img1,
   },
   {
     icon: Wrench,
-    title: "Renovation & Remodeling",
-    desc: "Transform your existing space with expert renovation solutions that add lasting value.",
-    img: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80&auto=format&fit=crop",
+    title: "Full Home Renovations",
+    desc: "Breathe new life into your home with comprehensive renovations that modernise every room while preserving what matters most.",
+    img: img2,
   },
   {
-    icon: HardHat,
-    title: "Structural Repairs",
-    desc: "Expert assessment and repair of structural issues to ensure safety and integrity.",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&auto=format&fit=crop&crop=left",
+    icon: UtensilsCrossed,
+    title: "Kitchen & Bathroom Upgrades",
+    desc: "Precision upgrades to kitchens and bathrooms — functional layouts, quality finishes, and lasting results you'll love every day.",
+    img: img3,
   },
   {
-    icon: Calculator,
-    title: "Budget Estimation & Material Selection",
-    desc: "Accurate cost estimation and smart material selection to keep your project on budget.",
-    img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format&fit=crop",
+    icon: Fence,
+    title: "Decks, Fences & Outdoor Living",
+    desc: "Custom-built decks, fences, and outdoor living spaces designed to extend your home and elevate your lifestyle.",
+    img: img4,
+  },
+  {
+    icon: Construction,
+    title: "Driveways & Retaining Walls",
+    desc: "Durable driveways and engineered retaining walls that combine kerb appeal with structural integrity for any property.",
+    img: img5,
   },
   {
     icon: Trees,
-    title: "Driveways, Retaining Walls & Paving",
-    desc: "Durable, attractive driveways, retaining walls, and paving for any property.",
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop",
+    title: "Landscaping",
+    desc: "Professional landscaping that transforms outdoor spaces — from planting and grading to irrigation and feature design.",
+    img: img6,
   },
   {
-    icon: Zap,
-    title: "Plumbing, Electrical & Insulation",
-    desc: "Certified professionals handling all plumbing, electrical wiring, and insulation needs.",
-    img: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=600&q=80&auto=format&fit=crop",
-  },
-  {
-    icon: Grid3x3,
-    title: "Tiles and Flooring",
-    desc: "Premium tiling and flooring installations across kitchens, bathrooms, and living areas.",
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop&crop=entropy&sat=-100",
-  },
-  {
-    icon: Sparkles,
-    title: "House Cleaning",
-    desc: "Professional post-construction and general house cleaning services to a high standard.",
-    img: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&q=80&auto=format&fit=crop",
-  },
-  {
-    icon: Sofa,
-    title: "Carpenter & Interior Redesigns",
-    desc: "Custom carpentry and interior redesign to refresh and personalise your living space.",
-    img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80&auto=format&fit=crop",
+    icon: Ruler,
+    title: "Interior Fit-Outs & Carpentry",
+    desc: "Bespoke interior fit-outs and custom carpentry — wardrobes, cabinetry, shelving, and joinery tailored to your space.",
+    img: img7,
   },
   {
     icon: PaintBucket,
-    title: "Exterior Cladding, Painting & Roofing",
-    desc: "Complete exterior upgrades — cladding, painting, and roofing to protect your home.",
-    img: "https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=600&q=80&auto=format&fit=crop",
+    title: "Painting, Plastering & Cladding",
+    desc: "Flawless interior and exterior finishes — skilled plastering, quality painting, and modern cladding solutions for every home.",
+    img: img8,
   },
   {
-    icon: Layers,
-    title: "Decks, Patios & Fencing",
-    desc: "Beautiful outdoor structures built to last and enhance your lifestyle.",
-    img: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80&auto=format&fit=crop",
+    icon: Plug,
+    title: "Plumbing, Electrical & Insulation",
+    desc: "Certified tradespeople delivering safe, compliant plumbing, electrical wiring, and high-performance insulation installations.",
+    img: img9,
+  },
+  {
+    icon: Settings2,
+    title: "Property Maintenance",
+    desc: "Reliable ongoing property maintenance to keep your home or investment in peak condition throughout the year.",
+    img: img10,
+  },
+  {
+    icon: Leaf,
+    title: "Garden Maintenance",
+    desc: "Regular garden upkeep including mowing, pruning, weeding, and seasonal care to keep your outdoor spaces immaculate.",
+    img: img11,
+  },
+  {
+    icon: Sparkles,
+    title: "Site Cleaning",
+    desc: "Thorough post-construction and pre-handover site cleaning — leaving every project spotless and ready to occupy.",
+    img: img12,
   },
 ];
 

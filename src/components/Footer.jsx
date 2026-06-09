@@ -1,10 +1,10 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 
-const FacebookSVG = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-  </svg>
-);
+// const FacebookSVG = () => (
+//   <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+//     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+//   </svg>
+// );
 const InstagramSVG = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -12,28 +12,35 @@ const InstagramSVG = () => (
     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
   </svg>
 );
-const LinkedinSVG = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" />
-  </svg>
-);
+// const LinkedinSVG = () => (
+//   <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+//     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+//     <rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" />
+//   </svg>
+// );
 
 const footerLinks = [
   { heading: "Quick Links", items: [
     { label: "Home", href: "#home" },
     { label: "About Us", href: "#about" },
     { label: "Our Services", href: "#services" },
+    { label: "Who We Work With", href: "#worked-with" },
     { label: "Why Choose Us", href: "#why-us" },
     { label: "Contact", href: "#contact" },
   ]},
   { heading: "Services", items: [
-    { label: "General Contracting", href: "#services" },
-    { label: "Design & New Build", href: "#services" },
-    { label: "Renovation & Remodeling", href: "#services" },
-    { label: "Structural Repairs", href: "#services" },
-    { label: "Driveways & Paving", href: "#services" },
-    { label: "Tiles & Flooring", href: "#services" },
+    { label: "New Builds & Extensions", href: "#services" },
+    { label: "Full Home Renovations", href: "#services" },
+    { label: "Kitchen & Bathroom Upgrades", href: "#services" },
+    { label: "Decks, Fences & Outdoor Living", href: "#services" },
+    { label: "Driveways & Retaining Walls", href: "#services" },
+    { label: "Landscaping", href: "#services" },
+    { label: "Interior Fit-Outs & Carpentry", href: "#services" },
+    { label: "Painting, Plastering & Cladding", href: "#services" },
+    { label: "Plumbing, Electrical & Insulation", href: "#services" },
+    { label: "Property Maintenance", href: "#services" },
+    { label: "Garden Maintenance", href: "#services" },
+    { label: "Site Cleaning", href: "#services" },
   ]},
 ];
 
@@ -127,16 +134,20 @@ export default function Footer() {
             © {new Date().getFullYear()} S-Con Limited. All rights reserved. Auckland, New Zealand.
           </p>
           {/* Social icons */}
-          <div style={{ display: "flex", gap: 10 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span style={{ fontSize: "0.75rem", fontWeight: 600, color: "#4b5563", letterSpacing: "0.06em", textTransform: "uppercase" }}>Follow Us</span>
+            <span style={{ width: 20, height: 1, background: "rgba(212,175,55,0.3)", display: "inline-block" }} />
             {[
-              { icon: FacebookSVG, href: "#", label: "Facebook" },
-              { icon: InstagramSVG, href: "#", label: "Instagram" },
-              { icon: LinkedinSVG, href: "#", label: "LinkedIn" },
+              // { icon: FacebookSVG, href: "#", label: "Facebook" },
+              { icon: InstagramSVG, href: "https://www.instagram.com/scon_limited/", label: "Instagram" },
+              // { icon: LinkedinSVG, href: "#", label: "LinkedIn" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
                 href={href}
                 aria-label={label}
+                target={href !== "#" ? "_blank" : undefined}
+                rel={href !== "#" ? "noopener noreferrer" : undefined}
                 style={{ width: 34, height: 34, borderRadius: 8, background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", justifyContent: "center", color: "#6b7280", textDecoration: "none", transition: "color 0.2s, border-color 0.2s, background 0.2s" }}
                 onMouseEnter={e => { e.currentTarget.style.color="#D4AF37"; e.currentTarget.style.borderColor="rgba(212,175,55,0.4)"; e.currentTarget.style.background="rgba(212,175,55,0.08)"; }}
                 onMouseLeave={e => { e.currentTarget.style.color="#6b7280"; e.currentTarget.style.borderColor="rgba(255,255,255,0.08)"; e.currentTarget.style.background="rgba(255,255,255,0.04)"; }}

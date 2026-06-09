@@ -1,12 +1,12 @@
 import { ShieldCheck, Clock, DollarSign, Users, Award, Handshake } from "lucide-react";
 
 const reasons = [
-  { icon: ShieldCheck, title: "Quality You Can Trust", desc: "Every project meets NZ building standards. We never cut corners — your satisfaction is our guarantee." },
-  { icon: Clock, title: "On Time, Every Time", desc: "We respect your time. Strict scheduling and transparent communication keeps projects on track." },
-  { icon: DollarSign, title: "Competitive Pricing", desc: "Premium quality at fair prices. Honest quotes with no hidden costs, ever." },
-  { icon: Users, title: "Experienced Team", desc: "Our skilled tradespeople bring years of hands-on experience to every job — big or small." },
-  { icon: Award, title: "End-to-End Service", desc: "From planning and estimation to final coat of paint — we handle everything under one roof." },
-  { icon: Handshake, title: "Built on Relationships", desc: "We build lasting relationships through honest, reliable service and genuine care for our clients." },
+  { icon: ShieldCheck, title: "Reliable & Professional", desc: "We show up, follow through, and make every interaction easy — from first call to final handover." },
+  { icon: DollarSign, title: "Clear Pricing, No Surprises", desc: "Honest, itemised quotes with no hidden costs. What we quote is what you pay." },
+  { icon: Award, title: "Quality Workmanship", desc: "Years of hands-on experience behind every job — high standards on every project, no exceptions." },
+  { icon: Clock, title: "Fast Response & Flexible Scheduling", desc: "Quick turnaround on enquiries and scheduling that works around you, not the other way around." },
+  { icon: Handshake, title: "Free, No-Obligation Quotes", desc: "Get a full project quote at no cost. No pressure, no commitment — just straight answers." },
+  { icon: Users, title: "We Care About Your Project", desc: "This isn't just a job to us. We treat every project like it's our own and every client like a long-term partner." },
 ];
 
 export default function WhyUs() {

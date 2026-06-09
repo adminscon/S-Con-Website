@@ -1,8 +1,10 @@
 import { CheckCircle2, Lightbulb, Users2 } from "lucide-react";
+import img15 from "../assets/Cover Photo 2.avif";
+import img16 from "../assets/Cover Image 2.avif";
 
 export default function About() {
   return (
-    <section id="about" style={{ background: "#0f0f0f", padding: "96px 0", position: "relative" }}>
+    <section id="about" style={{ background: "#0f0f0f", position: "relative" }}>
       {/* Section separator top */}
       <div className="section-sep" />
 
@@ -13,7 +15,7 @@ export default function About() {
           <div style={{ position: "relative" }}>
             <div style={{ borderRadius: 20, overflow: "hidden", aspectRatio: "4/5", maxHeight: 560 }}>
               <img
-                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=85&auto=format&fit=crop"
+                src={img16}
                 alt="S-Con construction professionals at work"
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
               />
@@ -28,7 +30,7 @@ export default function About() {
               borderRadius: 16, padding: "20px 24px",
               textAlign: "center", boxShadow: "0 12px 40px rgba(212,175,55,0.4)"
             }}>
-              <div style={{ fontFamily: "'Montserrat',sans-serif", fontWeight: 900, fontSize: "2.2rem", color: "#000" }}>10+</div>
+              <div style={{ fontFamily: "'Montserrat',sans-serif", fontWeight: 900, fontSize: "2.2rem", color: "#000" }}>6+</div>
               <div style={{ fontSize: "0.7rem", fontWeight: 700, color: "#000", textTransform: "uppercase", letterSpacing: "0.1em" }}>Years in<br />Auckland</div>
             </div>
 
@@ -39,19 +41,22 @@ export default function About() {
 
           {/* Right: Content */}
           <div>
-            <div className="section-chip">
+            <div className="section-chip-2">
               <Users2 size={13} /> About Us
             </div>
             <h2 style={{ fontFamily: "'Montserrat',sans-serif", fontWeight: 900, fontSize: "clamp(2rem,4vw,3rem)", color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
-              Auckland's Go-To<br /><span className="gold-text">Construction Team</span>
+              S-Con Limited
             </h2>
             <div className="gold-bar" style={{ marginBottom: 28 }} />
 
             <p style={{ color: "#9ca3af", fontSize: "1rem", lineHeight: 1.8, marginBottom: 20 }}>
-              S-Con Limited is a trusted Auckland-based construction company dedicated to delivering high-quality building, renovation, and maintenance services across all of Auckland. We pride ourselves on craftsmanship, reliability, and exceeding client expectations on every project.
+              A Trusted Construction, Renovation & Development Specialists
+              S‑Con Limited is a full‑service construction and renovation company based in Auckland, delivering high‑quality building solutions for homeowners, investors, and developers. With years of
+              hands‑on experience across residential and light‑commercial projects, we specialise in creating modern, durable, and beautifully finished spaces that stand the test of time.
             </p>
             <p style={{ color: "#9ca3af", fontSize: "1rem", lineHeight: 1.8, marginBottom: 32 }}>
-              Whether you're building a new home, renovating an existing property, or need urgent structural repairs — our team of experienced professionals brings the expertise and dedication to bring your vision to life.
+              Our team combines skilled craftsmanship with strong project management, ensuring every project is completed on time, on budget, and to the highest standard. Whether it’s a full home
+              renovation, a new build, a subdivision, or structural repairs, we bring the expertise and reliability Auckland clients expect from a professional construction partner.
             </p>
 
             {/* Checklist */}
@@ -68,13 +73,14 @@ export default function About() {
               ))}
             </div>
 
-            {/* Mission */}
+            {/* Story */}
             <div style={{ display: "flex", gap: 16, padding: 20, background: "rgba(212,175,55,0.05)", border: "1px solid rgba(212,175,55,0.2)", borderRadius: 14 }}>
               <Lightbulb size={22} color="#D4AF37" style={{ flexShrink: 0, marginTop: 2 }} />
               <div>
-                <div style={{ color: "#D4AF37", fontWeight: 700, fontSize: "0.85rem", marginBottom: 6 }}>Our Mission</div>
+                <div style={{ color: "#D4AF37", fontWeight: 700, fontSize: "0.85rem", marginBottom: 6 }}>Our Story</div>
                 <p style={{ color: "#9ca3af", fontSize: "0.88rem", lineHeight: 1.7 }}>
-                  To deliver exceptional construction services that enhance the lives of our clients and the communities we serve — with integrity, quality, and pride.
+                  S‑Con Limited was built on a simple belief: quality construction should be accessible, transparent, and stress‑free.
+                  What started as a small renovation team has grown into a multi‑discipline construction company trusted across Auckland for workmanship, communication, and integrity.
                 </p>
               </div>
             </div>

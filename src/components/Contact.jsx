@@ -4,7 +4,7 @@ const contacts = [
   { icon: Phone, label: "Phone", value: "+64 22 532 9942", sub: "Call us for a free quote", href: "tel:+64225329942" },
   { icon: Mail, label: "Email", value: "Sconltd@outlook.co.nz", sub: "We respond within 24 hours", href: "mailto:Sconltd@outlook.co.nz" },
   { icon: MapPin, label: "Location", value: "Auckland, New Zealand", sub: "Serving all Auckland regions", href: "https://maps.google.com/?q=Auckland,New+Zealand" },
-  { icon: Clock, label: "Working Hours", value: "Mon – Sat: 7am – 6pm", sub: "Sunday by appointment", href: null },
+  { icon: Clock, label: "Working Hours", value: "Mon – Fri: 8am – 5pm", sub: "Sunday by appointment", href: null },
 ];
 
 export default function Contact() {
