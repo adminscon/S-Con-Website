@@ -329,6 +329,23 @@ body {
   margin-bottom: 20px;
 }
 
+.section-chip-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 16px;
+  background: rgba(212,175,55,0.08);
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 999px;
+  color: #D4AF37;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
 /* ─── Stat Card ─────────────────────────────────────────── */
 .stat-card {
   text-align: center;

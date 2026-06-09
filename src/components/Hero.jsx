@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronRight, Phone, ArrowDown, Building2, HardHat, Star } from "lucide-react";
+import img13 from "../assets/Cover Image.jpg";
+import img14 from "../assets/Cover Pho.jpg";
+import img15 from "../assets/Cover Photo.avif";
 
 function useCountUp(end, duration = 2000) {
   const [count, setCount] = useState(0);
@@ -42,7 +45,7 @@ export default function Hero() {
     <section id="home" style={{ position: "relative", minHeight: "100vh", display: "flex", alignItems: "center", overflow: "hidden" }}>
       {/* Background image */}
       <img
-        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=85&auto=format&fit=crop"
+        src={img14}
         alt="Construction site"
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
       />
@@ -91,8 +94,8 @@ export default function Hero() {
 
           {/* Stats */}
           <div className="anim-fadeup" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16, maxWidth: 480, animationDelay: "0.55s" }}>
-            <Stat num={200} suffix="+" label="Projects Done" icon={Building2} />
-            <Stat num={10} suffix="+" label="Years Experience" icon={HardHat} />
+            {/* <Stat num={200} suffix="+" label="Projects Done" icon={Building2} /> */}
+            <Stat num={6} suffix="+" label="Years Experience" icon={HardHat} />
             <Stat num={12} suffix="" label="Services Offered" icon={Star} />
           </div>
         </div>
