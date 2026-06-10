@@ -1,6 +1,6 @@
 import { CheckCircle2, Lightbulb, Users2 } from "lucide-react";
-import img15 from "../assets/Cover Photo 2.avif";
-import img16 from "../assets/Cover Image 2.avif";
+// import img15 from "../assets/Cover Photo 2.avif";
+// import img16 from "../assets/Cover Image 2.avif";
 
 export default function About() {
   return (
@@ -15,10 +15,15 @@ export default function About() {
           <div style={{ position: "relative" }}>
             <div style={{ borderRadius: 20, overflow: "hidden", aspectRatio: "4/5", maxHeight: 560 }}>
               <img
-                src={img16}
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=85&auto=format&fit=crop"
                 alt="S-Con construction professionals at work"
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
               />
+              {/* <img
+                src={img16}
+                alt="S-Con construction professionals at work"
+                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              /> */}
               {/* Overlay gradient */}
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(10,10,10,0.7) 0%, transparent 50%)", borderRadius: 20 }} />
             </div>
